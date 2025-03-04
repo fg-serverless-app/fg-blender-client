@@ -1,0 +1,6 @@
+fastapi
+pydantic
+huaweicloudsdkcore
+huaweicloudsdkfunctiongraph
+pyyaml
+uvicorn

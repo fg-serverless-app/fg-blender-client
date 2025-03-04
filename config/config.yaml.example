@@ -1,0 +1,6 @@
+huawei:
+  ak: "xxxx"
+  sk: "xxx"
+  bucket: "xxxx"
+  endpoint: "xxxxx"
+  function_urn: "xxxx"
