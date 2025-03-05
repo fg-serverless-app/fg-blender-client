@@ -35,6 +35,7 @@ class RenderEngine(str, Enum):
 
 class TaskRequest(BaseModel):
     inputFile: str
+    renderType: str
     outputDir: str
     outputFile: str
     outputFormat: str
@@ -65,6 +66,7 @@ async def submit_task(task: TaskRequest):
         request.function_urn = function_urn
         request.body = {
             "bucketName": bucket,
+            "renderType": task.renderType,
             "inputFile": task.inputFile,
             "outputDir": task.outputDir,
             "outputFile": task.outputFile,
